@@ -1,1 +1,14 @@
-<button (click)="getData()">Get Data</button>
+<div class="wrapper">
+  <div *ngFor="let h of height" class="box">
+    <p>Уровень карналита в силосной башне №1<br>
+    <span class="num">{{h}}%</span></p>
+
+    <div class="container">
+    <div class="quarter"></div><div class="quarter">
+    </div><div class="quarter"></div><div class="quarter"></div>
+    <div class="level" [style.height.%]="h"></div>
+    </div>
+    <p>Масса карналита<br><span class="num">{{h}}</span></p>
+
+  </div>
+</div>

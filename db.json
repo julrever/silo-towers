@@ -1,42 +1,11 @@
-{
- "id": "0001",
- "title": "Силосная башня №1",
- "value": 1065,
- "minValue": 0,
- "maxValue": 1100
-},
-{
- "id": "0001",
- "title": "Силосная башня №2",
- "value": 900,
- "minValue": 0,
- "maxValue": 1000
-},
-{
- "id": "0001",
- "title": "Силосная башня №3",
- "value": 965,
- "minValue": 0,
- "maxValue": 1200
-},
-{
- "id": "0001",
- "title": "Силосная башня №4",
- "value": 794,
- "minValue": 0,
- "maxValue": 1000
-},
-{
- "id": "0001",
- "title": "Силосная башня №5",
- "value": 1269,
- "minValue": 0,
- "maxValue": 1200
-},
-{
- "id": "0001",
- "title": "Силосная башня №6",
- "value": 1065,
- "minValue": 0,
- "maxValue": 1200
-}
+[
+    {"id": "0001",  "title": "Lol",
+    "value": 40
+    },
+    {"id": "0002",  "title": "Kek",
+     "value": 20
+    },
+    {"id": "0003",  "title": "Cheburek",
+     "value": 60
+    }
+  ]
