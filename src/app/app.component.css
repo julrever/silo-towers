@@ -1,14 +1,14 @@
 p{
   font-family: Helvetica;
   text-align: center;
-  font-size: 1.1vw;
+  font-size: 15px;
   color: white;
   margin: 3%;
 }
 
 .num{
-  border-bottom: 3px solid #69c64d;
-  font-size: 1.5vw;
+  border-bottom: 3px solid;
+  font-size: 20px;
 }
 
 .container{
@@ -31,11 +31,10 @@ p{
 }
 
 .level{
-  background-color: #69c64d;
   width: 90%;
   position: absolute;
-  bottom: 5px;
-  opacity: 0.6;
+  bottom: 0;
+  opacity: 0.7;
   margin-left: 5%;
   margin-right: 5%;
 }

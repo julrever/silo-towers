@@ -14,13 +14,23 @@ export class AppComponent {
   constructor(private httpClient: HttpClient){}
 
    getData(){
-    this.httpClient.get('/db1.json').subscribe(
+    this.httpClient.get('https://api.myjson.com/bins/ozg1g').subscribe(
       (data) => {
         this.towers = data as Array<Indicator>;
+
         for (var i=0; i<8; i++){
-          this.height[i]=Math.round(this.towers[i].value/
-          (this.towers[i].maxValue-this.towers[i].minValue)/0.01);
-          console.log(this.height[i]);
+          var tmp = this.towers[i];
+
+          if (tmp.value > tmp.maxValue){
+            this.height[i]=Math.round(100+(tmp.value-tmp.maxValue)/
+            (tmp.maxValue-tmp.minValue)/0.01);
+          } else if (tmp.value < tmp.minValue){
+            this.height[i]=Math.round((tmp.value-tmp.minValue)/
+            (tmp.maxValue-tmp.minValue)/0.01)
+          } else {
+            this.height[i]=Math.round(tmp.value/
+            (tmp.maxValue-tmp.minValue)/0.01);
+          }
         }
       }
     )
@@ -28,7 +38,6 @@ export class AppComponent {
 
   ngOnInit() {
      this.getData();
-
   }
 }
 
